@@ -2,107 +2,142 @@
 
 ## Project Name
 
-The name of your project.
+# Gettin' Quizzy Wit It
 
 ## Project Description
 
-Use this section to describe your final project and perhaps any links to relevant sites that help convey the concept and/or functionality.
+Gettin' Quizzy Wit It is an Airtable React app that allows the user to experiance the 90's through fun quizzes. The user is able to select from three different quizzes, once a quiz is selected they can answer the questions and receive a score at the end. Upon completion the user will be asked if they'd like to add a question to the quiz.
 
-## Wireframes
+# Wireframes
 
-Upload images of your wireframes to an image hosting site or add them to an assets folder in your repo and link them here with a description of each specific wireframe.
+[Gettin' Quizzy Wit It - Wireframe](https://www.figma.com/file/SW9W5mMHD7wbcgxt2gVM2y/Gettin'-Quizzy-Wit-It?node-id=0%3A1 "Wireframe")
+
+## Desktop Wireframes
+
+HOMEPAGE
+![alt text][wireframe]
+
+[wireframe]: https://i.ibb.co/nzNtkfN/Screen-Shot-2021-12-01-at-10-32-35-PM.png "Desktop Wireframe - Homepage"
+
+QUIZ PAGE
+![alt text][wireframe1]
+
+[wireframe1]: https://i.ibb.co/dbH3tfn/Screen-Shot-2021-12-01-at-10-32-51-PM.png "Desktop Wireframe - Quiz Page"
+
+RESULTS PAGE
+![alt text][wireframe2]
+
+[wireframe2]: https://i.ibb.co/X8ZhTQP/Screen-Shot-2021-12-01-at-10-33-17-PM.png "Desktop Wireframe - Results Page"
+
+ADD PAGE
+![alt text][wireframe3]
+
+[wireframe3]: https://i.ibb.co/yW1Sw0s/Screen-Shot-2021-12-01-at-10-33-36-PM.png "Desktop Wireframe - ADD Page"
+
+## Mobile Wireframes
+
+![alt text][wireframe4]
+
+[wireframe4]: https://i.ibb.co/Vjph6Rw/Screen-Shot-2021-12-01-at-10-50-27-PM.png "Desktop Wireframe - Homepage"
 
 ## Component Hierarchy
-Show your component hierarchy here! Use [this](https://cms-assets.tutsplus.com/uploads/users/1795/posts/30352/image/GettingStartedWithReduxTutorial-React-Component-Structure.png) as an example.
+
+[Component Hierarchy](https://www.figma.com/file/54thvJOSQ4pQPoVGKF58PU/Gettin'-Quizzy-Wit-It---Component-Hierarchy?node-id=0%3A1)
+
+![alt text][component-hierarchy]
+
+[component-hierarchy]: https://i.ibb.co/LP2LYz3/Screen-Shot-2021-12-01-at-11-21-24-PM.png "Component Hierarchy"
 
 ## API and Data Sample
 
-Show us a snippet of JSON returned by your Airtable (you can find it under the API documentation) so we know you can access it and get the info you need. This __must__ be properly formatted. An example is below:
-
 ```json
 {
-    "records": [
-        {
-            "id": "recONRzIUTuZ5lXaF",
-            "fields": {
-                "author": "Liz Yrineo",
-                "setup": "Why did the tomato turn red?",
-                "punchline": "Because it saw the salad dressing!"
-            },
-            "createdTime": "2020-11-30T16:03:09.000Z"
-        },
-        {
-            "id": "rec3oYZ5Tp0AIDsKe",
-            "fields": {
-                "author": "Rachel Moskowitz",
-                "setup": "What did the green grape say to the red grape?",
-                "punchline": "Breathe, idiot, breathe!"
-            },
-            "createdTime": "2020-11-30T16:03:09.000Z"
-        },
-        {
-            "id": "recA34tOaoE1IVeC1",
-            "fields": {
-                "author": "Gary Grant",
-                "setup": "How do you make holy water?",
-                "punchline": "You boil the hell out of it!"
-            },
-            "createdTime": "2020-11-30T16:03:09.000Z"
-        }
-    ],
-    "offset": "recA34tOaoE1IVeC1"
+  "records": [
+    {
+      "id": "recRNphMx7s9bOz7T",
+      "fields": {
+        "question": "Who lives in a pineapple?",
+        "answer1": "spongebob",
+        "answer2": "dexter",
+        "answer3": "courage",
+        "answer4": "ed"
+      },
+      "createdTime": "2021-12-02T05:29:34.000Z"
+    },
+    {
+      "id": "recVd0v0PUPHSpu1o",
+      "fields": {},
+      "createdTime": "2021-12-02T05:29:34.000Z"
+    },
+    {
+      "id": "rec4ZKwuR1wJIj31T",
+      "fields": {},
+      "createdTime": "2021-12-02T05:29:34.000Z"
+    }
+  ],
+  "offset": "itrnB1akiyc3iJzHf/rec4ZKwuR1wJIj31T"
 }
 ```
 
 ### MVP/PostMVP
 
-The functionality will then be divided into two separate lists: MVP and PostMVP.  Carefully decide what is placed into your MVP, as the client will expect this functionality to be implemented upon project completion.  
+#### MVP
 
-#### MVP 
-*These are examples only. Replace with your own MVP features.*
+- Build functional React App
+- Utilize React Router
+- Have at least 6 rendered components
+- Have an organized and understandable React file structure
+- Use Axios for GET/ POST requests
+- Use only React DOM manipulation
+- Use CSS and/or CSS libraries to style
+- Use flexbox or grid
+- Implement responsive design on 2 screen sizes using media query
+- Must follow linting guidelines
+- Deploy via Netlify
+- Minimum of 50 commits total
+- Add three quizzes
+- Data for the quizzes to be added via Airtable API (Building a table for each quiz topic)
 
-- Find and use external api 
-- Render data on page 
-- Allow user to choose favorites 
+#### PostMVP
 
-#### PostMVP  
-*These are examples only. Replace with your own Post-MVP features.*
-
-- Add second API
-- Use local storage to save user favorites
+- Add animations to page
+- Add comment section for reviews on the quizzes
+- Add more quizzes (90's references & Only 90's will remember)
 
 ## Project Schedule
 
-This schedule will be used to keep track of your progress throughout the week and align with our expectations. Here's an example.
-
-|  Day | Deliverable | Status
-|---|---| ---|
-|July 10-12| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
-|July 13| Project Approval | Incomplete
-|July 13| Core Application Structure (HTML, CSS, etc.) | Incomplete
-|July 14| Pseudocode / actual code | Incomplete
-|July 15| Initial Clickable Model  | Incomplete
-|July 16| MVP | Incomplete
-|July 17| Presentations | Incomplete
+| Day            | Deliverable                                            | Status     |
+| -------------- | ------------------------------------------------------ | ---------- |
+| December 1     | Prompt / Wireframes / Component Hierarchy / Timeframes | Incomplete |
+| December 2     | Project Approval                                       | Incomplete |
+| December 3     | Build API Data via Airtable                            | Incomplete |
+| December 4 & 5 | Access & Render API Data                               | Incomplete |
+| December 6     | Build Functionality for Quiz & Build Form              | Incomplete |
+| December 7     | Build Design via CSS & Make Responsive                 | Incomplete |
+| December 8     | MVP & Testing/Debugging                                | Incomplete |
+| December 9     | Presentations                                          | Incomplete |
 
 ## Timeframes
 
-Tell us how long you anticipate spending on each area of development. Be sure to consider how many hours a day you plan to be coding and how many days you have available until presentation day.
-
-Time frames are also key in the development cycle.  You have limited time to code all parts of your app.  Your estimates can then be used to evalute possibilities based on time needed and the actual time you have before the app must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add an additional hour or two to each component to play it safe. Throughout your project, keep track of your Time Invested and Actual Time and update your README regularly.
-
-| Component | Priority | Estimated Time | Time Invested | Actual Time |
-| --- | :---: |  :---: | :---: | :---: |
-| Adding Form | H | 3hrs| 3.5hrs | 3.5hrs |
-| Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
-| Total | H | 6hrs| 5hrs | 5hrs |
+| Component                               | Priority | Estimated Time | Time Invested | Actual Time |
+| --------------------------------------- | :------: | :------------: | :-----------: | :---------: |
+| Build Airtable                          |    H     |      4hrs      |      hrs      |     hrs     |
+| Render API Data                         |    H     |      4hrs      |      hrs      |     hrs     |
+| Build function for buttons              |    H     |      2hrs      |      hrs      |     hrs     |
+| Build functionality for quiz results    |    H     |      5hrs      |      hrs      |     hrs     |
+| Adding Form                             |    H     |      3hrs      |      hrs      |     hrs     |
+| Design app with CSS                     |    H     |      4hrs      |      hrs      |     hrs     |
+| Set up responsiveness and media queries |    H     |      4hrs      |      hrs      |     hrs     |
+| Fulfill remaining MVP                   |    H     |      3hrs      |      hrs      |     hrs     |
+| Testing & Debugging                     |    H     |      3hrs      |      hrs      |     hrs     |
+| Total                                   |    H     |     32hrs      |      hrs      |     hrs     |
 
 ## SWOT Analysis
 
-### Strengths:
+### Strengths: Being able to build the components and keeping them organized for cleaner code.
 
-### Weaknesses:
+### Weaknesses: Potentially having trouble knowing exactly where to call certain states and params to get the data to render correctly.
 
-### Opportunities:
+### Opportunities: To build more knowledge on how to set up functions for the quiz results, but will look up resources.
 
-### Threats:
+### Threats: Not being able to get all the data needed to build the quizzes within the API.
