@@ -6,7 +6,7 @@
 
 ## Project Description
 
-Gettin' Quizzy Wit It is an Airtable React app that allows the user to experiance the 90's through fun quizzes. The user is able to select from three different quizzes, once a quiz is selected they can answer the questions and receive a score at the end. Upon completion the user will be asked if they'd like to add a question to the quiz.
+Gettin' Quizzy Wit It is an Airtable React app that allows the user to experience the 90's through fun quizzes. The user is able to select from three different quizzes, once a quiz is selected they can answer the questions and receive a score at the end. Upon completion the user will be asked if they'd like to add a question to the quiz.
 
 # Wireframes
 
