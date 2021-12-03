@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { grabQuestions } from "./services/index";
 import Questions from './components/Questions';
 import Homepage from './components/Homepage';
+import Header from './components/Header';
 import Footer from './components/Footer';
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
 
   return (
     <div className="App">
+      <Header />
       <Homepage />
       <Questions questions={questions} />
       <Footer />
