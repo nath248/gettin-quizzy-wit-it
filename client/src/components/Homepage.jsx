@@ -1,18 +1,6 @@
-import { Link, useNavigate, useParams } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
-function Homepage(props) {
-  const navigate = useNavigate();
-  const params = useParams();
-  const [category, setCategory] = useState([]);
-
-  useEffect(() => {
-    const findCategory = props.questions.filter(question => {
-      params.category = question.fields.category;
-      console.log(params.category);
-    })
-    setCategory(findCategory);
-  }, [])
+function Homepage() {
 
   return (
     <>
