@@ -1,5 +1,5 @@
 function Questions(props) {
-  console.log(props.questions.fields)
+
   return (
     <div>
       {
@@ -13,7 +13,7 @@ function Questions(props) {
               <button>{question.fields.answer4}</button>
             </>
             :
-            <h1 key={question.id}>Loading ...</h1>
+            null
         ))
       }
     </div>

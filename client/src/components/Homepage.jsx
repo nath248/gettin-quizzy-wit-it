@@ -1,4 +1,19 @@
-function Homepage() {
+import { Link, useNavigate, useParams } from "react-router-dom";
+import { useState, useEffect } from "react";
+
+function Homepage(props) {
+  const navigate = useNavigate();
+  const params = useParams();
+  const [category, setCategory] = useState([]);
+
+  useEffect(() => {
+    const findCategory = props.questions.filter(question => {
+      params.category = question.fields.category;
+      console.log(params.category);
+    })
+    setCategory(findCategory);
+  }, [])
+
   return (
     <>
       <div className="img-div">
@@ -6,9 +21,9 @@ function Homepage() {
       </div>
       <div className="content-div">
         <h1>Quizzes</h1>
-        <button>90's Cartoon Quiz</button>
-        <button>90's Sitcoms Quiz</button>
-        <button>90's Music Quiz</button>
+        <Link to="/cartoon">90's Cartoon Quiz</Link>
+        <Link to="/sitcoms">90's Sitcoms Quiz</Link>
+        <Link to="/music">90's Music Quiz</Link>
       </div>
     </>
   )
