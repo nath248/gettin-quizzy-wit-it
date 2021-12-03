@@ -2,6 +2,8 @@ import './App.css';
 import { useEffect, useState } from "react";
 import { grabQuestions } from "./services/index";
 import Questions from './components/Questions';
+import Homepage from './components/Homepage';
+import Footer from './components/Footer';
 
 function App() {
 
@@ -18,7 +20,9 @@ function App() {
 
   return (
     <div className="App">
+      <Homepage />
       <Questions questions={questions} />
+      <Footer />
     </div>
   );
 }
