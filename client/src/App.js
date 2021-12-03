@@ -1,6 +1,7 @@
 import './App.css';
 import { useEffect, useState } from "react";
 import { grabQuestions } from "./services/index";
+import Questions from './components/Questions';
 
 function App() {
 
@@ -17,7 +18,7 @@ function App() {
 
   return (
     <div className="App">
-      
+      <Questions questions={questions} />
     </div>
   );
 }
