@@ -1,33 +1,27 @@
-// import {useNavigate, useParams } from "react-router-dom";
-// import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 
 function Cartoons(props) {
+  const [question, setQuestion] = useState({});
 
-  // const navigate = useNavigate();
-  // const params = useParams();
-  // const [category, setCategory] = useState([]);
+  useEffect(() => {
+    const foundQuestion = props.questions.find(question => {
+      return question.fields.category === "cartoon";
+    })
+    setQuestion(foundQuestion);
+  }, [props.questions])
 
-  // useEffect(() => {
-  //   const findCategory = props.questions.filter(question => {
-  //     params.category = question.fields.category;
-  //     console.log(params.category);
-  //   })
-  //   setCategory(findCategory);
-  // }, [])
-  // const content = props.questions.map((question) => question.fields.category === "cartoon";
-  // console.log(content);
   return (
     <div>
-      {props.questions[0] ?
-            <>
-            <h3 key={props.questions.id}>{props.questions[0].fields.question}</h3>
-              <button>{props.questions[0].fields.answer1}</button>
-              <button>{props.questions[0].fields.answer2}</button>
-              <button>{props.questions[0].fields.answer3}</button>
-              <button>{props.questions[0].fields.answer4}</button>
+      {question && question.fields ?
+        <>
+          <h3 key={question.id}>{question.fields.question}</h3>
+          <button>{question.fields.answer1}</button>
+          <button>{question.fields.answer2}</button>
+          <button>{question.fields.answer3}</button>
+          <button>{question.fields.answer4}</button>
         </>
         :
-      null
+        null
       }
     </div>
   )
