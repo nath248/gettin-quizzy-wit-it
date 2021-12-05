@@ -10,6 +10,10 @@ function Cartoons(props) {
     setQuestion(foundQuestion);
   }, [props.questions])
 
+  const handleButton = () => {
+    
+  }
+
   return (
     <div>
       {question && question.fields ?
