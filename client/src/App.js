@@ -15,7 +15,8 @@ function App() {
   const [questions, setQuestions] = useState([]);
   const [toggle, setToggle] = useState(false);
   const [index, setIndex] = useState(0);
-  const [score, setScore] = useState(1);
+  const [score, setScore] = useState(0);
+  const [total, setTotal] = useState(0);
 
   useEffect(() => {
     const getQuestions = async () => {
@@ -32,9 +33,9 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Homepage questions={questions} />} />
-        <Route path="/list/:category" element={<Questions questions={questions} index={index} setIndex={setIndex} score={score} setScore={setScore} />} />
+        <Route path="/list/:category" element={<Questions questions={questions} index={index} setIndex={setIndex} score={score} setScore={setScore} total={total} setTotal={setTotal} />} />
         <Route path="/new" element={<Form setToggle={setToggle} />} />
-        <Route path="/results" element={<Results score={score} />} />
+        <Route path="/results" element={<Results score={score} total={total} />} />
       </Routes>
       <Footer />
     </div>
