@@ -18,7 +18,7 @@ function Questions(props) {
       //If correct run index
       props.setIndex(prev => prev + 1)
     }
-      // nav to results page
+
     if (props.index === question.length - 1) {
       navigate("/results");
       props.setIndex(0)
@@ -30,7 +30,7 @@ function Questions(props) {
   const handleClick = (e) => {
     if (e.target.value === question[props.index].fields.correct) {
       props.setScore(props.score + 1);
-      console.log(props.score);
+      props.setTotal(question.length);
     }
   }
 
