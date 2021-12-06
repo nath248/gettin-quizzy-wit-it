@@ -38,13 +38,14 @@ function Questions(props) {
     <div>
       { question[props.index].fields ?
         <>
-        <div>
-          <h3 key={question[props.index].id}>{question[props.index].fields.question}</h3>
+          <div>
+            <h1>Questions</h1>
+            <h3 key={question[props.index].id}>{question[props.index].fields.question}</h3>
             <button value={question[props.index].fields.answer1} onClick={handleClick}>{question[props.index].fields.answer1}</button>
-          <button value={question[props.index].fields.answer2} onClick={handleClick}>{question[props.index].fields.answer2}</button>
-          <button value={question[props.index].fields.answer3} onClick={handleClick}>{question[props.index].fields.answer3}</button>
-          <button value={question[props.index].fields.answer4} onClick={handleClick}>{question[props.index].fields.answer4}</button>
-        </div>
+            <button value={question[props.index].fields.answer2} onClick={handleClick}>{question[props.index].fields.answer2}</button>
+            <button value={question[props.index].fields.answer3} onClick={handleClick}>{question[props.index].fields.answer3}</button>
+            <button value={question[props.index].fields.answer4} onClick={handleClick}>{question[props.index].fields.answer4}</button>
+          </div>
           <button onClick={handleQuestion}>Next Question</button>
         </>
         :

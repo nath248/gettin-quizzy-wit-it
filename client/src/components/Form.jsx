@@ -34,6 +34,7 @@ function Form(props) {
 
   return (
     <div>
+      <h1>Add New Question</h1>
       <form onSubmit={handleSubmit}>
         <input type="text" placeholder="question" name="question" value={question} onChange={(e) => setQuestion(e.target.value)}/>
         <select name="category" onChange={(e) => setCategory(e.target.value)}>

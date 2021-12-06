@@ -9,9 +9,6 @@ function Homepage() {
       </div>
       <div className="content-div">
         <h1>Quizzes</h1>
-        {/* <Link to="/cartoon">90's Cartoon Quiz</Link>
-        <Link to="/sitcoms">90's Sitcoms Quiz</Link>
-        <Link to="/music">90's Music Quiz</Link> */}
         <Link to="/list/cartoon">90's Cartoon Quiz </Link>
         <Link to="/list/sitcoms">90's Sitcoms Quiz </Link>
         <Link to="/list/music">90's Music Quiz</Link>
