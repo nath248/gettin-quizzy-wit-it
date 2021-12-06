@@ -9,6 +9,7 @@ import Footer from './components/Footer';
 import Cartoons from "./components/Cartoons";
 import Sitcoms from "./components/Sitcoms";
 import Music from "./components/Music";
+import Form from './components/Form';
 
 function App() {
 
@@ -34,6 +35,7 @@ function App() {
         <Route path="/cartoon" element={<Cartoons questions={questions} />} />
         <Route path="/sitcom" element={<Sitcoms questions={questions} />} />
         <Route path="/music" element={<Music questions={questions} />} />
+        <Route path="/new" element={<Form setToggle={setToggle} />} />
       </Routes>
       <Footer />
     </div>
