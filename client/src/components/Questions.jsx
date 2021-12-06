@@ -20,7 +20,7 @@ function Questions(props) {
     }
       // nav to results page
     if (props.index === question.length - 1) {
-      navigate("/");
+      navigate("/results");
       props.setIndex(0)
     }
   }
