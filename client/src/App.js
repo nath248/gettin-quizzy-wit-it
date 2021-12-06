@@ -6,15 +6,15 @@ import Questions from './components/Questions';
 import Homepage from './components/Homepage';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import Cartoons from "./components/Cartoons";
-import Sitcoms from "./components/Sitcoms";
-import Music from "./components/Music";
 import Form from './components/Form';
+
 
 function App() {
 
   const [questions, setQuestions] = useState([]);
   const [toggle, setToggle] = useState(false);
+  // const [index, setIndex] = useState(0);
+  // const [question, setQuestion] = useState(null);
 
   useEffect(() => {
     const getQuestions = async () => {
@@ -31,10 +31,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Homepage questions={questions} />} />
-        <Route path="/list" element={<Questions questions={questions} />} />
-        <Route path="/cartoon" element={<Cartoons questions={questions} />} />
-        <Route path="/sitcom" element={<Sitcoms questions={questions} />} />
-        <Route path="/music" element={<Music questions={questions} />} />
+        <Route path="/list/:category" element={<Questions questions={questions} />} />
         <Route path="/new" element={<Form setToggle={setToggle} />} />
       </Routes>
       <Footer />
