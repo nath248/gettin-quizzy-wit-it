@@ -7,6 +7,7 @@ import Homepage from './components/Homepage';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Form from './components/Form';
+import Results from './components/Results';
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
   const [questions, setQuestions] = useState([]);
   const [toggle, setToggle] = useState(false);
   const [index, setIndex] = useState(0);
+  const [score, setScore] = useState(1);
 
   useEffect(() => {
     const getQuestions = async () => {
@@ -30,8 +32,9 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Homepage questions={questions} />} />
-        <Route path="/list/:category" element={<Questions questions={questions} index={index} setIndex={setIndex}/>} />
+        <Route path="/list/:category" element={<Questions questions={questions} index={index} setIndex={setIndex} score={score} setScore={setScore} />} />
         <Route path="/new" element={<Form setToggle={setToggle} />} />
+        <Route path="/results" element={<Results score={score} />} />
       </Routes>
       <Footer />
     </div>

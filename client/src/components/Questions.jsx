@@ -27,16 +27,23 @@ function Questions(props) {
 
   if (!question) return <h1>Loading</h1>;
 
+  const handleClick = (e) => {
+    if (e.target.value === question[props.index].fields.correct) {
+      props.setScore(props.score + 1);
+      console.log(props.score);
+    }
+  }
+
   return (
     <div>
       { question[props.index].fields ?
         <>
         <div>
           <h3 key={question[props.index].id}>{question[props.index].fields.question}</h3>
-          <button>{question[props.index].fields.answer1}</button>
-          <button>{question[props.index].fields.answer2}</button>
-          <button>{question[props.index].fields.answer3}</button>
-          <button>{question[props.index].fields.answer4}</button>
+            <button value={question[props.index].fields.answer1} onClick={handleClick}>{question[props.index].fields.answer1}</button>
+          <button value={question[props.index].fields.answer2} onClick={handleClick}>{question[props.index].fields.answer2}</button>
+          <button value={question[props.index].fields.answer3} onClick={handleClick}>{question[props.index].fields.answer3}</button>
+          <button value={question[props.index].fields.answer4} onClick={handleClick}>{question[props.index].fields.answer4}</button>
         </div>
           <button onClick={handleQuestion}>Next Question</button>
         </>
