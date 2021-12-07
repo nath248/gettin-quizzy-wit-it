@@ -3,8 +3,10 @@ import { Link } from "react-router-dom";
 function Header() {
   return (
     <div className="header">
-      <Link to="/">Home</Link>
-      <Link to="/new">Add New Question</Link>
+      <div className="links-main">
+        <Link to="/" className="links header-link">Home</Link>
+        <Link to="/new" className="links header-link">Add New Question</Link>
+      </div>
     </div>
   )
 }

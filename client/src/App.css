@@ -3,11 +3,31 @@
   background-color: #adffc6;
   height: 100vh;
 }
+
 .header {
   background-image: url(https://res.cloudinary.com/dojhf40bp/image/upload/v1638551854/footer_g2hom0.jpg);
   background-size: contain;
   padding: 10px 0;
+  text-align: left;
 }
+
+.links-main {
+  background-color: #00e6ff;
+  border-radius: 8px;
+  width: 40%;
+  margin-left: 10px;
+  text-align: center;
+}
+
+.links {
+  color: white;
+  padding: 5px;
+}
+
+.header-link {
+  color: black;
+}
+
 .main {
   display: flex;
   flex-direction: row;
