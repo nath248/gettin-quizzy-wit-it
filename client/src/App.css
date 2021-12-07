@@ -61,15 +61,25 @@
   width: 50%;
 }
 
+.quizzes {
+  background-color: #00e6ff;
+  padding: 20px;
+  border-radius: 8px;
+}
+
 .quiz-link {
   background-color: #aa74ff;
   border-radius: 8px;
   display: block;
   margin: 10px 0;
+  box-shadow: 0px 0px 10px 8px #adffc6;
 }
 
 h1 {
   font-family: "Bungee Outline", cursive;
+  background-color: #00e6ff;
+  padding: 16px;
+  border-radius: 8px;
 }
 
 /* .details {
