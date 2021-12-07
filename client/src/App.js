@@ -32,10 +32,10 @@ function App() {
     <div className="App">
       <Header />
       <Routes>
-        <Route path="/" element={<Homepage questions={questions} />} />
+        <Route path="/" element={<Homepage questions={questions} setScore={setScore} setTotal={setTotal} />} />
         <Route path="/list/:category" element={<Questions questions={questions} index={index} setIndex={setIndex} score={score} setScore={setScore} total={total} setTotal={setTotal} />} />
         <Route path="/new" element={<Form setToggle={setToggle} />} />
-        <Route path="/results" element={<Results score={score} total={total} />} />
+        <Route path="/results" element={<Results score={score} total={total} setScore={setScore} setTotal={setTotal} />} />
       </Routes>
       <Footer />
     </div>
