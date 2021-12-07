@@ -3,6 +3,11 @@
   background-color: #adffc6;
   height: 100vh;
 }
+.header {
+  background-image: url(https://res.cloudinary.com/dojhf40bp/image/upload/v1638551854/footer_g2hom0.jpg);
+  background-size: contain;
+  padding: 10px 0;
+}
 .main {
   display: flex;
   flex-direction: row;
@@ -26,4 +31,5 @@
 .footer {
   background: url("https://res.cloudinary.com/dojhf40bp/image/upload/v1638551854/footer_g2hom0.jpg");
   background-size: contain;
+  padding: 15px 0;
 }
