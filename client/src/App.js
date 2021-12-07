@@ -30,17 +30,23 @@ function App() {
 
   return (
     <div className="App">
-      <Header />
-      <div className="img-div">
+      <div className="header">
+        <Header />
+      </div>
+      <div className="logo-img-div">
         <img src="https://i.ibb.co/QDrJQys/logo-bkg.png" alt="logo" className="logo" width="230" height="200" />
       </div>
-      <Routes>
-        <Route path="/" element={<Homepage questions={questions} setScore={setScore} setTotal={setTotal} />} />
-        <Route path="/list/:category" element={<Questions questions={questions} index={index} setIndex={setIndex} score={score} setScore={setScore} total={total} setTotal={setTotal} />} />
-        <Route path="/new" element={<Form setToggle={setToggle} />} />
-        <Route path="/results" element={<Results score={score} total={total} setScore={setScore} setTotal={setTotal} />} />
-      </Routes>
-      <Footer />
+      <div className="details">
+        <Routes>
+          <Route path="/" element={<Homepage questions={questions} setScore={setScore} setTotal={setTotal} />} />
+          <Route path="/list/:category" element={<Questions questions={questions} index={index} setIndex={setIndex} score={score} setScore={setScore} total={total} setTotal={setTotal} />} />
+          <Route path="/new" element={<Form setToggle={setToggle} />} />
+          <Route path="/results" element={<Results score={score} total={total} setScore={setScore} setTotal={setTotal} />} />
+        </Routes>
+      </div>
+      <div className="footer">
+        <Footer />
+      </div>
     </div>
   );
 }
