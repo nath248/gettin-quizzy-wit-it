@@ -8,9 +8,6 @@ function Homepage(props) {
 
   return (
     <>
-      <div className="img-div">
-        <img src="https://i.ibb.co/QDrJQys/logo-bkg.png" alt="logo" className="logo" width="230" height="200" />
-      </div>
       <div className="content-div">
         <h1>Quizzes</h1>
         <Link to="/list/cartoon" onClick={reset}>90's Cartoon Quiz </Link>

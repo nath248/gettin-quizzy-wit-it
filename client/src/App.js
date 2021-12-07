@@ -31,6 +31,9 @@ function App() {
   return (
     <div className="App">
       <Header />
+      <div className="img-div">
+        <img src="https://i.ibb.co/QDrJQys/logo-bkg.png" alt="logo" className="logo" width="230" height="200" />
+      </div>
       <Routes>
         <Route path="/" element={<Homepage questions={questions} setScore={setScore} setTotal={setTotal} />} />
         <Route path="/list/:category" element={<Questions questions={questions} index={index} setIndex={setIndex} score={score} setScore={setScore} total={total} setTotal={setTotal} />} />
