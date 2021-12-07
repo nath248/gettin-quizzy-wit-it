@@ -1,5 +1,12 @@
 .App {
   text-align: center;
+  background-color: #adffc6;
+  height: 100vh;
+}
+.main {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
 }
 
 .footer {
