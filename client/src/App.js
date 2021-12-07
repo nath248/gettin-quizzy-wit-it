@@ -35,7 +35,7 @@ function App() {
       </div>
       <div className="main">
         <div className="logo-img-div">
-          <img src="https://i.ibb.co/QDrJQys/logo-bkg.png" alt="logo" className="logo" width="230" height="200" />
+          <img src="https://i.ibb.co/QDrJQys/logo-bkg.png" alt="logo" className="logo" />
         </div>
         <div className="details">
           <Routes>
