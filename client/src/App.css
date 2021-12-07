@@ -1,7 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Outline&family=Genos:wght@300&display=swap");
+
 .App {
   text-align: center;
   background-color: #adffc6;
   height: 100vh;
+  font-family: "Genos", sans-serif;
 }
 
 .header {
@@ -15,13 +18,14 @@
   background-color: #00e6ff;
   border-radius: 8px;
   width: 40%;
-  margin-left: 10px;
+  margin-left: 40px;
   text-align: center;
 }
 
 .links {
   color: white;
   padding: 5px;
+  font-family: "Genos", sans-serif;
 }
 
 .header-link {
@@ -32,6 +36,7 @@
   display: flex;
   flex-direction: row;
   align-content: center;
+  justify-content: space-between;
   padding: 30px 40px;
 }
 
@@ -40,6 +45,10 @@
   height: 200px;
   border-radius: 8px;
   box-shadow: 0px 0px 8px 1px rgb(1, 160, 136);
+}
+
+h1 {
+  font-family: "Bungee Outline", cursive;
 }
 
 /* .details {
