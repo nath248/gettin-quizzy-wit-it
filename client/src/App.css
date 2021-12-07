@@ -65,6 +65,12 @@
   background-color: #00e6ff;
   padding: 20px;
   border-radius: 8px;
+  box-shadow: 0px 0px 8px 1px rgb(1, 160, 136);
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .quiz-link {
@@ -72,7 +78,8 @@
   border-radius: 8px;
   display: block;
   margin: 10px 0;
-  box-shadow: 0px 0px 10px 8px #adffc6;
+  width: 140px;
+  border: 10px solid #adffc6;
 }
 
 h1 {
