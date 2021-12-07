@@ -8,7 +8,7 @@ function Footer() {
       </li>
       <li>
         <a href="https://github.com/nath248" target="_blank" rel='noreferrer'>
-        <i className="fab fa-github"></i>
+        <i className="fab fa-github" aria-hidden="true"></i>
         </a>
       </li>
     </div>

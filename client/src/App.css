@@ -6,6 +6,8 @@
   height: auto;
   width: 100vw;
   font-family: "Genos", sans-serif;
+  margin: auto;
+  padding: 0;
 }
 
 .header {
@@ -19,9 +21,12 @@
   background-color: #00e6ff;
   border-radius: 4px;
   width: 20%;
-  margin-left: 152px;
+  margin-left: 34px;
   text-align: center;
   box-shadow: 0px 0px 8px 1px rgb(1, 160, 136);
+  font-size: 18px;
+  padding-top: 4px;
+  padding-bottom: 4px;
 }
 
 .links {
@@ -35,35 +40,46 @@
 }
 
 .main {
-  width: 100%;
   display: flex;
   flex-direction: row;
   align-content: center;
+  justify-content: center;
   margin: 50px 10px;
 }
 
 .logo-img-div {
-  width: 50%;
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+}
+
+.details {
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
 }
 
 .logo {
-  width: 50%;
+  width: 90%;
+  max-width: 450px;
   height: auto;
   border-radius: 8px;
   box-shadow: 0px 0px 8px 1px rgb(1, 160, 136);
 }
 
-.details {
-  width: 50%;
-}
-
 .content-div {
   text-align: center;
-  width: 50%;
+  width: 100%;
+  max-width: 550px;
+  height: auto;
   display: flex;
   flex-direction: column;
-  position: relative;
-  bottom: 110px;
+  position: absolute;
+  bottom: 196px;
 }
 
 .quizzes {
@@ -94,18 +110,19 @@ h1 {
   border-radius: 8px;
   box-shadow: 0px 0px 8px 1px rgb(1, 160, 136);
   width: 60%;
-  margin-left: 40px;
-  margin-right: 40px;
+  margin-left: 90px;
 }
-
-/* .details {
-  background-color: #00e6ff;
-  border-radius: 8px;
-  box-shadow: 0px 0px 8px 1px rgb(1, 160, 136);
-} */
 
 .footer {
   background: url("https://res.cloudinary.com/dojhf40bp/image/upload/v1638551854/footer_g2hom0.jpg");
   background-size: contain;
   padding: 15px 0;
+}
+
+li {
+  list-style: none;
+}
+
+i {
+  width: 100px;
 }
