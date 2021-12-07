@@ -10,9 +10,11 @@ function Homepage(props) {
     <>
       <div className="content-div">
         <h1>Quizzes</h1>
-        <Link to="/list/cartoon" onClick={reset}>90's Cartoon Quiz </Link>
-        <Link to="/list/sitcoms" onClick={reset}>90's Sitcoms Quiz </Link>
-        <Link to="/list/music" onClick={reset}>90's Music Quiz</Link>
+        <div className="quizzes">
+          <Link to="/list/cartoon" onClick={reset} className="links quiz-link">90's Cartoon Quiz </Link>
+          <Link to="/list/sitcoms" onClick={reset} className="links quiz-link">90's Sitcoms Quiz </Link>
+          <Link to="/list/music" onClick={reset} className="links quiz-link">90's Music Quiz</Link>
+        </div>
       </div>
     </>
   )
