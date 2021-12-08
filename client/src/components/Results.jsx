@@ -16,7 +16,7 @@ function Results(props) {
         :
           <p>0%</p>
         }
-        <p>You got {props.score}/{props.total} questions correct</p>
+        <p>You've got {props.score}/{props.total} questions correct</p>
         <p>Want to add questions to this quiz? Click ADD below.</p>
         <Link to="/new" onClick={reset} className="links add-link">ADD</Link>
       </div>
