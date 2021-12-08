@@ -87,7 +87,6 @@
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0px 0px 8px 1px rgb(1, 160, 136);
-  /* height: 200px; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -98,9 +97,10 @@
   background-color: #aa74ff;
   border-radius: 8px;
   display: block;
-  margin: 26px 0;
-  width: 140px;
+  margin: 23px 0;
+  width: 160px;
   border: 10px solid #adffc6;
+  font-size: 20px;
 }
 
 h1 {
@@ -113,6 +113,26 @@ h1 {
   margin-left: 90px;
 }
 
+.quizzes-content {
+  background-color: #00e6ff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 8px 1px rgb(1, 160, 136);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  max-width: 550px;
+  height: auto;
+  position: absolute;
+  bottom: 96px;
+}
+
+.layover {
+  margin-left: 15px;
+}
+
 .footer {
   background: url("https://res.cloudinary.com/dojhf40bp/image/upload/v1638551854/footer_g2hom0.jpg");
   background-size: contain;
@@ -123,6 +143,6 @@ li {
   list-style: none;
 }
 
-i {
+/* i {
   width: 100px;
-}
+} */
