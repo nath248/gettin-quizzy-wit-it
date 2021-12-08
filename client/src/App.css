@@ -114,7 +114,7 @@ h1 {
   margin-left: 90px;
 }
 
-.quizzes-content {
+.quizzes-details {
   background-color: #00e6ff;
   padding: 20px;
   border-radius: 8px;
@@ -126,12 +126,17 @@ h1 {
   width: 100%;
   max-width: 550px;
   height: auto;
-  position: absolute;
-  bottom: 96px;
 }
 
 .layover {
   margin-left: 15px;
+  text-align: center;
+  max-width: 550px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  bottom: 132px;
 }
 
 .footer {

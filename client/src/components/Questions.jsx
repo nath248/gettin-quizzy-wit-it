@@ -30,11 +30,11 @@ function Questions(props) {
   if (!question) return <h1>Loading</h1>;
 
   return (
-    <div className="quizzes-content">
+    <div className="quizzes-details">
+      <h1 className="layover">Questions</h1>
       { question[props.index].fields ?
         <>
-          <h1 className="layover">Questions</h1>
-          <div>
+          <div className="quizzes-content">
             <h3 key={question[props.index].id}>{question[props.index].fields.question}</h3>
             <button value={question[props.index].fields.answer1} onClick={handleClick}>{question[props.index].fields.answer1}</button>
             <button value={question[props.index].fields.answer2} onClick={handleClick}>{question[props.index].fields.answer2}</button>
