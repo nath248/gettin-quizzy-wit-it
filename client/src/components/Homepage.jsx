@@ -8,8 +8,8 @@ function Homepage(props) {
 
   return (
     <>
-      <div className="content-div">
-        <h1 className="home">Quizzes</h1>
+      <div className="content-div height">
+        <h1 className="layover res home">Quizzes</h1>
         <div className="quizzes height">
           <Link to="/list/cartoon" onClick={reset} className="links quiz-link">90's Cartoon Quiz </Link>
           <Link to="/list/sitcoms" onClick={reset} className="links quiz-link">90's Sitcoms Quiz </Link>
