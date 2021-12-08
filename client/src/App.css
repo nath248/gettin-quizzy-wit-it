@@ -84,7 +84,7 @@
 .content-div {
   text-align: center;
   width: 100%;
-  max-width: 850px;
+  max-width: 750px;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -139,7 +139,7 @@ h1 {
   align-items: center;
   text-align: center;
   width: 100%;
-  max-width: 850px;
+  max-width: 750px;
   max-height: 360px;
 }
 
@@ -202,7 +202,7 @@ button {
   align-items: center;
   text-align: center;
   width: 100%;
-  max-width: 850px;
+  max-width: 750px;
   max-height: 360px;
 }
 
@@ -233,7 +233,7 @@ p {
   padding: 15px 30px;
   margin: 5px 20px;
   min-width: 100px;
-  max-width: 260px;
+  max-width: 290px;
 }
 
 .add-link {
@@ -255,7 +255,7 @@ p {
   align-items: center;
   text-align: center;
   width: 100%;
-  max-width: 850px;
+  max-width: 750px;
   max-height: 360px;
 }
 
@@ -328,4 +328,9 @@ i {
 }
 small {
   font-size: 18px;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 800px) {
 }
