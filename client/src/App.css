@@ -130,7 +130,7 @@ h1 {
   text-align: center;
   width: 100%;
   max-width: 550px;
-  max-height: 302px;
+  max-height: 300px;
 }
 
 .quizzes-content {
@@ -143,7 +143,7 @@ h1 {
   flex-direction: column;
   align-items: center;
   position: relative;
-  bottom: 102px;
+  bottom: 110px;
 }
 
 .layover {
@@ -160,6 +160,11 @@ h1 {
 h3 {
   font-size: 20px;
   margin: 10px 0;
+  color: white;
+  background-color: #aa74ff;
+  border-radius: 8px;
+  padding: 5px 5px;
+  margin: 6px 30px;
 }
 
 button {
@@ -172,6 +177,13 @@ button {
   display: block;
   margin: 5px 0;
   min-width: 140px;
+}
+
+/* Results */
+.results {
+}
+
+.results-content {
 }
 
 /* Footer */
