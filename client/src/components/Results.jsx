@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import Emoji from "./Emoji";
 
 function Results(props) {
   const percent = (props.score / props.total) * 100;
@@ -16,7 +17,12 @@ function Results(props) {
         :
           <p>0%</p>
         }
-        <p>You've got {props.score}/{props.total} questions correct</p>
+        {(percent >= 75) ?
+          <p>Great Job you're a Certified 90's Kid! <Emoji symbol="💯" /><Emoji symbol="🏆" /> You've got {props.score}/{props.total} questions correct</p>
+         :
+          <p>Better luck next time! <Emoji symbol="😧" /><Emoji symbol="😫" /><Emoji symbol="😭" /> You've got {props.score}/{props.total} questions correct</p>
+        }
+        
         <p>Want to add questions to this quiz? Click ADD below.</p>
         <Link to="/new" onClick={reset} className="links add-link">ADD</Link>
       </div>
@@ -25,3 +31,6 @@ function Results(props) {
 }
 
 export default Results;
+
+// Resource for Emoji Set Up: https://medium.com/@seanmcp/%EF%B8%8F-how-to-use-emojis-in-react-d23bbf608bf7
+

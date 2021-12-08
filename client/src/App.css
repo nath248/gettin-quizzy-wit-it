@@ -218,10 +218,10 @@ p {
   color: white;
   background-color: #aa74ff;
   border-radius: 8px;
-  padding: 15px 15px;
-  margin: 8px 30px;
+  padding: 15px 30px;
+  margin: 5px 20px;
   min-width: 100px;
-  max-width: 220px;
+  max-width: 260px;
 }
 
 .add-link {
