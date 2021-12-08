@@ -9,7 +9,7 @@ function Results(props) {
 
   return (
     <div className="results">
-      <h1>Results</h1>
+      <h1 className="layover res">Results</h1>
       <div className="results-content">
         {(percent > 0) ? 
           <p>{percent}%</p>
@@ -18,7 +18,7 @@ function Results(props) {
         }
         <p>You got {props.score}/{props.total} questions correct</p>
         <p>Want to add questions to this quiz? Click ADD below.</p>
-        <Link to="/new" onClick={reset}>ADD</Link>
+        <Link to="/new" onClick={reset} className="links add-link">ADD</Link>
       </div>
     </div>
   )

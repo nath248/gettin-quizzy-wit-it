@@ -31,7 +31,7 @@ function Questions(props) {
 
   return (
     <div className="quizzes-details">
-      <h1 className="layover">Questions</h1>
+      <h1 className="layover res">Questions</h1>
       { question[props.index].fields ?
         <>
           <div className="quizzes-content">
