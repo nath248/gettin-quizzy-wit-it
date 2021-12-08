@@ -11,7 +11,11 @@ function Results(props) {
     <div className="results">
       <h1>Results</h1>
       <div className="results-content">
-        <p>{percent}%</p>
+        {(percent > 0) ? 
+          <p>{percent}%</p>
+        :
+          <p>0%</p>
+        }
         <p>You got {props.score}/{props.total} questions correct</p>
         <p>Want to add questions to this quiz? Click ADD below.</p>
         <Link to="/new" onClick={reset}>ADD</Link>
