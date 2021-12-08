@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Bungee+Outline&family=Genos:wght@300&display=swap");
 
+/* Header */
 .App {
   text-align: center;
   background-color: #adffc6;
@@ -38,6 +39,7 @@
   color: black;
 }
 
+/* App */
 .main {
   display: flex;
   flex-direction: row;
@@ -62,6 +64,7 @@
   justify-content: center;
 }
 
+/* Homepage */
 .logo {
   width: 100%;
   max-width: 400px;
@@ -114,6 +117,8 @@ h1 {
   margin-left: 90px;
 }
 
+/* Questions */
+
 .quizzes-details {
   background-color: #00e6ff;
   padding: 20px;
@@ -125,7 +130,20 @@ h1 {
   text-align: center;
   width: 100%;
   max-width: 550px;
-  height: auto;
+  max-height: 302px;
+}
+
+.quizzes-content {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 10px;
+  background-color: #adffc6;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  bottom: 102px;
 }
 
 .layover {
@@ -139,6 +157,24 @@ h1 {
   bottom: 132px;
 }
 
+h3 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+button {
+  color: white;
+  background-color: #aa74ff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-family: "Genos", sans-serif;
+  font-size: 18px;
+  display: block;
+  margin: 5px 0;
+  min-width: 140px;
+}
+
+/* Footer */
 .footer {
   background: url("https://res.cloudinary.com/dojhf40bp/image/upload/v1638551854/footer_g2hom0.jpg");
   background-size: contain;
