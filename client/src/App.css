@@ -22,14 +22,14 @@
 .links-main {
   background-color: #00e6ff;
   border-radius: 4px;
-  width: 20%;
+  width: 22%;
   margin-left: 85px;
   margin-top: 40px;
   text-align: center;
   box-shadow: 0px 0px 8px 1px rgb(1, 160, 136);
   font-size: 18px;
   padding-top: 4px;
-  padding-bottom: 4px;
+  padding-bottom: 6px;
 }
 
 .links {
@@ -40,6 +40,7 @@
 
 .header-link {
   color: black;
+  padding: 10px;
 }
 
 /* App */
@@ -66,15 +67,22 @@
   justify-content: center;
 }
 
+.main,
+.details {
+  margin: 0 5px;
+}
+
 .height {
   margin-top: 80px;
 }
 
 /* Homepage */
 .logo {
-  width: 100%;
+  /* width: 100%;
   max-width: 500px;
-  max-height: 400px;
+  max-height: 400px; */
+  max-width: 100%;
+  height: 78%;
   border-radius: 8px;
   box-shadow: 0px 0px 8px 1px rgb(1, 160, 136);
 }
@@ -330,10 +338,13 @@ small {
 
 /* Media Queries */
 
-@media only screen and (max-width: 1290px) {
+@media only screen and (max-width: 1050px) {
+  .new {
+    font-size: 26px;
+  }
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 850px) {
   .App {
     height: 100%;
   }
@@ -378,6 +389,9 @@ small {
     position: relative;
     bottom: 80px;
     margin-bottom: 10px;
+  }
+  .new {
+    width: 120px;
   }
   .height {
     margin-top: 10px;
