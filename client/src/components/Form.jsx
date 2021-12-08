@@ -33,22 +33,24 @@ function Form(props) {
   }
 
   return (
-    <div>
-      <h1>Add New Question</h1>
-      <form onSubmit={handleSubmit}>
-        <input type="text" placeholder="question" name="question" value={question} onChange={(e) => setQuestion(e.target.value)}/>
-        <select name="category" onChange={(e) => setCategory(e.target.value)}>
-          <option value="">--Please choose a category--</option>
-          <option value="cartoon">cartoon</option>
-          <option value="sitcoms">sitcoms</option>
-          <option value="music">music</option>
-        </select>
-        <input type="text" placeholder="answer1" name="answer1" value={answer1} onChange={(e) => setAnswer1(e.target.value)}/>
-        <input type="text" placeholder="answer2" name="answer2" value={answer2} onChange={(e) => setAnswer2(e.target.value)}/>
-        <input type="text" placeholder="answer3" name="answer3" value={answer3} onChange={(e) => setAnswer3(e.target.value)}/>
-        <input type="text" placeholder="answer4" name="answer4" value={answer4} onChange={(e) => setAnswer4(e.target.value)}/>
-        <button type="submit">ADD</button>
-      </form>
+    <div className="new-details">
+      <h1 className="layover new res">Add New Question</h1>
+      <div className="new-content">
+        <form onSubmit={handleSubmit}>
+          <input type="text" placeholder="question" name="question" value={question} onChange={(e) => setQuestion(e.target.value)}/>
+          <select name="category" onChange={(e) => setCategory(e.target.value)}>
+            <option value="">--Please choose a category--</option>
+            <option value="cartoon">cartoon</option>
+            <option value="sitcoms">sitcoms</option>
+            <option value="music">music</option>
+          </select>
+          <input type="text" placeholder="answer1" name="answer1" value={answer1} onChange={(e) => setAnswer1(e.target.value)}/>
+          <input type="text" placeholder="answer2" name="answer2" value={answer2} onChange={(e) => setAnswer2(e.target.value)}/>
+          <input type="text" placeholder="answer3" name="answer3" value={answer3} onChange={(e) => setAnswer3(e.target.value)}/>
+          <input type="text" placeholder="answer4" name="answer4" value={answer4} onChange={(e) => setAnswer4(e.target.value)}/>
+          <button type="submit">ADD</button>
+        </form>
+      </div>
     </div>
   )
 }
