@@ -18,7 +18,7 @@ function Results(props) {
           <p>0%</p>
         }
         {(percent >= 75) ?
-          <p>Great Job you're a Certified 90's Kid! <Emoji symbol="💯" /><Emoji symbol="🏆" /> You've got {props.score}/{props.total} questions correct</p>
+          <p>Great Job! You're a Certified 90's Kid! <Emoji symbol="💯" /><Emoji symbol="🏆" /> You've got {props.score}/{props.total} questions correct</p>
          :
           <p>Better luck next time! <Emoji symbol="😧" /><Emoji symbol="😫" /><Emoji symbol="😭" /> You've got {props.score}/{props.total} questions correct</p>
         }

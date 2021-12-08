@@ -46,6 +46,7 @@
   align-content: center;
   justify-content: center;
   margin: 50px 10px;
+  max-height: 338px;
 }
 
 .logo-img-div {
@@ -62,14 +63,13 @@
   flex-direction: row;
   align-content: center;
   justify-content: center;
+  min-height: 338px;
 }
 
 /* Homepage */
 .logo {
   width: 100%;
   max-width: 400px;
-  height: auto;
-  max-height: 338px;
   border-radius: 8px;
   box-shadow: 0px 0px 8px 1px rgb(1, 160, 136);
 }
@@ -87,8 +87,7 @@
 
 .quizzes {
   background-color: #00e6ff;
-  padding: 0 20px;
-  height: 338px;
+  padding: 20px 20px;
   border-radius: 8px;
   box-shadow: 0px 0px 8px 1px rgb(1, 160, 136);
   display: flex;
