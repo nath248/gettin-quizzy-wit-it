@@ -173,8 +173,9 @@ h3 {
   color: white;
   background-color: #aa74ff;
   border-radius: 8px;
-  padding: 5px 5px;
+  padding: 5px 30px;
   margin: 6px 30px;
+  font-size: 24px;
 }
 
 button {
@@ -183,9 +184,9 @@ button {
   padding: 10px 20px;
   border-radius: 8px;
   font-family: "Genos", sans-serif;
-  font-size: 18px;
+  font-size: 20px;
   display: block;
-  margin: 5px 0;
+  margin: 12px 0;
   min-width: 140px;
   border: 2px solid rgb(101, 101, 101);
 }
@@ -216,6 +217,7 @@ button {
   align-items: center;
   position: relative;
   bottom: 110px;
+  font-size: 24px;
 }
 
 .res {
@@ -223,7 +225,7 @@ button {
 }
 
 p {
-  font-size: 20px;
+  font-size: 24px;
   margin: 10px 0;
   color: white;
   background-color: #aa74ff;
@@ -239,6 +241,7 @@ p {
   border-radius: 8px;
   min-width: 40px;
   border: 2px solid rgb(101, 101, 101);
+  padding: 5px 20px;
 }
 
 /* Form */
@@ -270,7 +273,7 @@ p {
 }
 
 .new {
-  padding: 0px;
+  padding: 5px;
 }
 
 form {
@@ -287,7 +290,7 @@ select {
   text-align: center;
   border-radius: 8px;
   font-family: "Genos", sans-serif;
-  font-size: 18px;
+  font-size: 24px;
   display: block;
   margin: 5px 0;
   min-width: 215px;
@@ -311,8 +314,18 @@ select {
 
 li {
   list-style: none;
+  display: inline;
 }
 
-/* i {
-  width: 100px;
-} */
+.icons,
+.copyright {
+  height: 40px;
+  margin: 10px 0;
+}
+i {
+  font-size: 40px;
+  letter-spacing: 10px;
+}
+small {
+  font-size: 18px;
+}
