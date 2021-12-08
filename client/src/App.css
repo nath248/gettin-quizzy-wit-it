@@ -5,7 +5,7 @@
   text-align: center;
   background-color: #adffc6;
   width: 100vw;
-  /* height: 100vh; */
+  height: 100vh;
   font-family: "Genos", sans-serif;
   margin: auto;
   padding: 0;
@@ -347,6 +347,9 @@ small {
     align-items: center;
     margin: 20px 0;
   }
+  .details {
+    margin-top: 10px;
+  }
   .logo-img-div {
     margin: 10px;
   }
@@ -354,20 +357,60 @@ small {
     position: static;
     margin: 5px 0;
   }
+
   .home {
     position: static;
   }
-  h1 {
+  .quizzes-content,
+  .new-content,
+  .results-content {
+    position: relative;
+    bottom: 70px;
+  }
+  h1,
+  .layover {
     margin: 0 auto;
-    font-size: 22px;
+    font-size: 20px;
+    padding-left: 30px;
+    padding-right: 35px;
+  }
+  .layover {
+    position: relative;
+    bottom: 80px;
+    margin-bottom: 10px;
   }
   .height {
     margin-top: 10px;
   }
+  .quizzes-details,
+  .new-details,
+  .results,
   .quiz-link {
     margin: 10px 0;
     width: 70%;
     font-size: 18px;
+  }
+  .quizzes-details,
+  .new-details,
+  .results {
+    margin-top: 70px;
+  }
+  h3,
+  p,
+  button,
+  .links {
+    font-size: 18px;
+    padding: 10px;
+  }
+  form {
+    margin: 0;
+  }
+  input,
+  select {
+    font-size: 18px;
+    padding: 10px;
+    min-width: 60%;
+    width: 65%;
   }
   .footer {
     position: static;
