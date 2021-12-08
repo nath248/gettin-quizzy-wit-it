@@ -33,7 +33,7 @@ function Form(props) {
   }
 
   return (
-    <div className="new-details">
+    <div className="new-details height">
       <h1 className="layover new res">Add New Question</h1>
       <div className="new-content">
         <form onSubmit={handleSubmit}>

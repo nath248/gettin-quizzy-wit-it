@@ -9,7 +9,7 @@ function Results(props) {
   }
 
   return (
-    <div className="results">
+    <div className="results height">
       <h1 className="layover res">Results</h1>
       <div className="results-content">
         {(percent > 0) ? 

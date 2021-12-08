@@ -34,7 +34,7 @@ function App() {
         <Header />
       </div>
       <div className="main">
-        <div className="logo-img-div">
+        <div className="logo-img-div height">
           <img src="https://i.ibb.co/QDrJQys/logo-bkg.png" alt="logo" className="logo" />
         </div>
         <div className="details">

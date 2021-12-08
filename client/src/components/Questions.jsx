@@ -30,7 +30,7 @@ function Questions(props) {
   if (!question) return <h1>Loading</h1>;
 
   return (
-    <div className="quizzes-details">
+    <div className="quizzes-details height">
       <h1 className="layover res">Questions</h1>
       { question[props.index].fields ?
         <>
