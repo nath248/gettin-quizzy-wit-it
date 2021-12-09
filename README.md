@@ -4,6 +4,8 @@
 
 # Gettin' Quizzy Wit It
 
+[Gettin' Quizzy Wit It - Website](https://getting-quizzy-wit-it.netlify.app/ "Link")
+
 ## Project Description
 
 Gettin' Quizzy Wit It is an Airtable React app that allows the user to experience the 90's through fun quizzes. The user is able to select from three different quizzes, once a quiz is selected they can answer the questions and receive a score at the end. Upon completion the user will be asked if they'd like to add a question to the quiz.
@@ -54,28 +56,46 @@ ADD PAGE
 {
   "records": [
     {
-      "id": "recRNphMx7s9bOz7T",
+      "id": "recmlg3im9seL8fJX",
       "fields": {
-        "question": "Who lives in a pineapple?",
-        "answer1": "spongebob",
-        "answer2": "dexter",
-        "answer3": "courage",
-        "answer4": "ed"
+        "question": "Which character had an evil doodle double?",
+        "answer1": "Spongebob",
+        "answer2": "Dexter",
+        "answer3": "Courage",
+        "answer4": "Ed",
+        "category": "cartoon",
+        "correct": "Spongebob"
       },
-      "createdTime": "2021-12-02T05:29:34.000Z"
+      "createdTime": "2021-12-02T16:44:23.000Z"
     },
     {
-      "id": "recVd0v0PUPHSpu1o",
-      "fields": {},
-      "createdTime": "2021-12-02T05:29:34.000Z"
+      "id": "recMbdcRYgXGhzatg",
+      "fields": {
+        "question": "What animal is Rocko from Rocko's Modern Life?",
+        "answer1": "Dog",
+        "answer2": "Rat",
+        "answer3": "Wallaby",
+        "answer4": "Kangaroo",
+        "category": "cartoon",
+        "correct": "Wallaby"
+      },
+      "createdTime": "2021-12-02T16:55:57.000Z"
     },
     {
-      "id": "rec4ZKwuR1wJIj31T",
-      "fields": {},
-      "createdTime": "2021-12-02T05:29:34.000Z"
+      "id": "recZr9tTEzSREL7MF",
+      "fields": {
+        "question": "Which cartoon taught us a bit of a different language?",
+        "answer1": "Arthur",
+        "answer2": "Dora the Explorer",
+        "answer3": "Caillou",
+        "answer4": "Invader Zim",
+        "category": "cartoon",
+        "correct": "Dora the Explorer"
+      },
+      "createdTime": "2021-12-02T16:57:55.000Z"
     }
   ],
-  "offset": "itrnB1akiyc3iJzHf/rec4ZKwuR1wJIj31T"
+  "offset": "itrSHYKkF1jzArehz/recZr9tTEzSREL7MF"
 }
 ```
 
@@ -108,29 +128,29 @@ ADD PAGE
 
 | Day            | Deliverable                                            | Status     |
 | -------------- | ------------------------------------------------------ | ---------- |
-| December 1     | Prompt / Wireframes / Component Hierarchy / Timeframes | Incomplete |
-| December 2     | Project Approval                                       | Incomplete |
-| December 3     | Build API Data via Airtable                            | Incomplete |
-| December 4 & 5 | Access & Render API Data                               | Incomplete |
-| December 6     | Build Functionality for Quiz & Build Form              | Incomplete |
-| December 7     | Build Design via CSS & Make Responsive                 | Incomplete |
-| December 8     | MVP & Testing/Debugging                                | Incomplete |
+| December 1     | Prompt / Wireframes / Component Hierarchy / Timeframes | Complete   |
+| December 2     | Project Approval                                       | Complete   |
+| December 3     | Build API Data via Airtable                            | Complete   |
+| December 4 & 5 | Access & Render API Data                               | Complete   |
+| December 6     | Build Functionality for Quiz & Build Form              | Complete   |
+| December 7     | Build Design via CSS & Make Responsive                 | Complete   |
+| December 8     | MVP & Testing/Debugging                                | Complete   |
 | December 9     | Presentations                                          | Incomplete |
 
 ## Timeframes
 
 | Component                               | Priority | Estimated Time | Time Invested | Actual Time |
 | --------------------------------------- | :------: | :------------: | :-----------: | :---------: |
-| Build Airtable                          |    H     |      4hrs      |      hrs      |     hrs     |
-| Render API Data                         |    H     |      4hrs      |      hrs      |     hrs     |
-| Build function for buttons              |    H     |      2hrs      |      hrs      |     hrs     |
-| Build functionality for quiz results    |    H     |      5hrs      |      hrs      |     hrs     |
-| Adding Form                             |    H     |      3hrs      |      hrs      |     hrs     |
-| Design app with CSS                     |    H     |      4hrs      |      hrs      |     hrs     |
-| Set up responsiveness and media queries |    H     |      4hrs      |      hrs      |     hrs     |
-| Fulfill remaining MVP                   |    H     |      3hrs      |      hrs      |     hrs     |
-| Testing & Debugging                     |    H     |      3hrs      |      hrs      |     hrs     |
-| Total                                   |    H     |     32hrs      |      hrs      |     hrs     |
+| Build Airtable                          |    H     |      4hrs      |     5hrs      |    5hrs     |
+| Render API Data                         |    H     |      4hrs      |    1.5hrs     |   1.5hrs    |
+| Build function for buttons              |    H     |      2hrs      |     4hrs      |    4hrs     |
+| Build functionality for quiz results    |    H     |      5hrs      |    3.5hrs     |   3.5hrs    |
+| Adding Form                             |    H     |      3hrs      |      1hr      |     1hr     |
+| Design app with CSS                     |    H     |      4hrs      |     9hrs      |    9hrs     |
+| Set up responsiveness and media queries |    H     |      4hrs      |     5hrs      |    5hrs     |
+| Fulfill remaining MVP                   |    H     |      3hrs      |    2.5hrs     |   2.5hrs    |
+| Testing & Debugging                     |    H     |      3hrs      |      1hr      |     1hr     |
+| Total                                   |    H     |     32hrs      |    32.5hrs    |   32.5hrs   |
 
 ## SWOT Analysis
 
@@ -141,3 +161,9 @@ ADD PAGE
 ### Opportunities: To build more knowledge on how to set up functions for the quiz results, but will look up resources.
 
 ### Threats: Not being able to get all the data needed to build the quizzes within the API.
+
+## Resources
+
+### Emoji Set Up: https://medium.com/@seanmcp/%EF%B8%8F-how-to-use-emojis-in-react-d23bbf608bf7
+
+### Textured Background: https://www.transparenttextures.com/
