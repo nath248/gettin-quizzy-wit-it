@@ -9,6 +9,7 @@ function Form(props) {
   const [answer2, setAnswer2] = useState("");
   const [answer3, setAnswer3] = useState("");
   const [answer4, setAnswer4] = useState("");
+  const [correct, setCorrect] = useState("");
 
   const nav = useNavigate();
 
@@ -22,6 +23,7 @@ function Form(props) {
       answer2,
       answer3,
       answer4,
+      correct,
     };
 
     const res = await postQuestion(newQuestion);
@@ -76,6 +78,13 @@ function Form(props) {
             name="answer4"
             value={answer4}
             onChange={(e) => setAnswer4(e.target.value)}
+          />
+          <input
+            type="text"
+            placeholder="Type In Correct Answer"
+            name="correct"
+            value={correct}
+            onChange={(e) => setCorrect(e.target.value)}
           />
           <button type="submit">ADD</button>
         </form>
