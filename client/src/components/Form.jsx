@@ -81,7 +81,7 @@ function Form(props) {
           />
           <input
             type="text"
-            placeholder="Type In Correct Answer"
+            placeholder="Enter Correct Answer"
             name="correct"
             value={correct}
             onChange={(e) => setCorrect(e.target.value)}
