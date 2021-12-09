@@ -12,10 +12,9 @@ function Form(props) {
 
   const nav = useNavigate();
 
-
   const handleSubmit = async (e) => {
     e.preventDefault();
-    
+
     const newQuestion = {
       question,
       category,
@@ -23,36 +22,66 @@ function Form(props) {
       answer2,
       answer3,
       answer4,
-    }
-    
+    };
+
     const res = await postQuestion(newQuestion);
-    props.setToggle(prevToggle => !prevToggle);
+    props.setToggle((prevToggle) => !prevToggle);
     if (res) {
       nav("/");
     }
-  }
+  };
 
   return (
     <div className="new-details height">
       <h1 className="layover new res">Add New Question</h1>
       <div className="new-content">
         <form onSubmit={handleSubmit}>
-          <input type="text" placeholder="Enter a Question" name="question" value={question} onChange={(e) => setQuestion(e.target.value)}/>
+          <input
+            type="text"
+            placeholder="Enter a Question"
+            name="question"
+            value={question}
+            onChange={(e) => setQuestion(e.target.value)}
+          />
           <select name="category" onChange={(e) => setCategory(e.target.value)}>
             <option value="">--Please choose a category--</option>
             <option value="cartoon">cartoon</option>
             <option value="sitcoms">sitcoms</option>
             <option value="music">music</option>
           </select>
-          <input type="text" placeholder="Enter an Answer" name="answer1" value={answer1} onChange={(e) => setAnswer1(e.target.value)}/>
-          <input type="text" placeholder="Enter an Answer" name="answer2" value={answer2} onChange={(e) => setAnswer2(e.target.value)}/>
-          <input type="text" placeholder="Enter an Answer" name="answer3" value={answer3} onChange={(e) => setAnswer3(e.target.value)}/>
-          <input type="text" placeholder="Enter an Answer" name="answer4" value={answer4} onChange={(e) => setAnswer4(e.target.value)}/>
+          <input
+            type="text"
+            placeholder="Enter an Answer"
+            name="answer1"
+            value={answer1}
+            onChange={(e) => setAnswer1(e.target.value)}
+          />
+          <input
+            type="text"
+            placeholder="Enter an Answer"
+            name="answer2"
+            value={answer2}
+            onChange={(e) => setAnswer2(e.target.value)}
+          />
+          <input
+            type="text"
+            placeholder="Enter an Answer"
+            name="answer3"
+            value={answer3}
+            onChange={(e) => setAnswer3(e.target.value)}
+          />
+          <input
+            type="text"
+            placeholder="Enter an Answer"
+            name="answer4"
+            value={answer4}
+            onChange={(e) => setAnswer4(e.target.value)}
+          />
           <button type="submit">ADD</button>
         </form>
       </div>
     </div>
-  )
+  );
 }
 
 export default Form;
